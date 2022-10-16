@@ -18,7 +18,7 @@
 }
 .link:hover {
   text-decoration: none;
-  color: #30475e;
+  color: #ffffff;
 }
 .card {
   margin-left: 140px;
@@ -36,18 +36,17 @@
   padding-left: 495px;
   padding-top: 14px;
 }
-.filterbox{
+.filterbox {
   display: flex;
 }
 .filter {
   padding-left: 160px;
-  
 }
 .filterassign {
   padding-left: 520px;
 }
-.filterassign .nname{
-  margin-right:14px;
+.filterassign .nname {
+  margin-right: 14px;
 }
 .filter .low {
   background-color: lightgreen;
