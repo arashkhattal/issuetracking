@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Searchapp from "./pages/Searchapp";
+import Draw from "./pages/Draw";
+import Createissue from "./pages/Createissue";
+import Createpriject from "./pages/Createpriject";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Projectboard from "./pages/Projectboard";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Projectboard />} />
+          <Route path="/" element={<Searchapp />} />
+          <Route path="/" element={<Draw />} />
+          <Route path="/issues" element={<Createissue />} />
+          <Route path="/projects" element={<Createpriject />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
