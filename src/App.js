@@ -9,9 +9,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Projectboard />} />
-          <Route path="/" element={<Searchapp />} />
-          <Route path="/" element={<Draw />} />
+          <Route path="/issuetracking" element={<Projectboard />} />
+          <Route path="/search" element={<Searchapp />} />
+          <Route path="/side" element={<Draw />} />
           <Route path="/issues" element={<Createissue />} />
           <Route path="/projects" element={<Createpriject />} />
         </Routes>
