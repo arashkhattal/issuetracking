@@ -88,10 +88,10 @@ function Projectboard() {
                   <Card.Body>
                     <Card.Title>{head}</Card.Title>
                     <Card.Text>{text}</Card.Text>
-                    ID:{id}{" "}
+                    ID:{id}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Priority:&nbsp;&nbsp;
-                    <Button variant="outline-dark">{priority}</Button>{" "}
+                    <Button variant="outline-dark" className="high">{priority}</Button>{" "}
                   </Card.Body>
                 </Card>
               </Grid>

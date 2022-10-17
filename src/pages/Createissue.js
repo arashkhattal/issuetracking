@@ -114,6 +114,7 @@ export default function BasicTextFields() {
               <select name="cars" id="cars" class="form-control">
                 <option value="volvo">Select</option>
                 <option value="volvo">High</option>
+                <option value="volvo">Medium</option>
                 <option value="saab">low</option>
               </select>
             </div>
@@ -174,16 +175,12 @@ export default function BasicTextFields() {
                     value: true,
                     message: "story point is required",
                   },
-                  minLength: {
-                    value: 3,
-                    message: "Minimun allowed length is 3 characters",
-                  },
                   maxLength: {
                     value: 20,
                     message: "Maximum allowed length is 20 characters ",
                   },
                   pattern: {
-                    value: /[0-9]+/,
+                    value: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37],
                     message: "Please enter only numbers",
                   },
                 })}
@@ -199,14 +196,7 @@ export default function BasicTextFields() {
             >
               Reset
             </button>
-            <button
-              type="submit"
-              class="btn btn-primary"
-<<<<<<< HEAD
-=======
-              }
->>>>>>> 5cc67a2f1ca195c147c33fc92e673bba1d62b458
-            >
+            <button type="submit" class="btn btn-primary">
               Save
             </button>
           </div>

@@ -13,12 +13,12 @@
 }
 .link {
   text-decoration: none;
-  color: #d65a31;
+  color: #ffffff;
   font-size: 100px !important;
 }
 .link:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #a5a5a5;
 }
 .card {
   margin-left: 140px;
@@ -29,7 +29,7 @@
   color: red;
 }
 .active {
-  color: #eeeeee;
+  color: lightcoral;
   font-size: large;
 }
 .box-card {

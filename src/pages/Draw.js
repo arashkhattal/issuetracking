@@ -23,7 +23,7 @@ export default function ClippedDrawer() {
             [`& .MuiDrawer-paper`]: {
               width: drawerWidth,
               boxSizing: "border-box",
-              background: "#393E46",
+              background: "#222831",
             },
           }}
         >
