@@ -13,7 +13,7 @@ export default function BasicTextFields() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => alert(JSON.stringify(data));
+  const onSubmit = () => navigate("/issuetracking");
 
   return (
     <>
@@ -124,7 +124,6 @@ export default function BasicTextFields() {
             <button
               type="submit"
               class="btn btn-primary"
-              onClick={() => navigate("/")}
             >
               Save
             </button>
