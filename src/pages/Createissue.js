@@ -13,7 +13,7 @@ export default function BasicTextFields() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => alert(JSON.stringify(data));
+  const onSubmit = (data) => navigate("/issuetracking");
 
   const [btn, setBtn] = useState(true);
   const handleChange = (e) => {
@@ -89,11 +89,11 @@ export default function BasicTextFields() {
                 {...register("desc", {
                   required: {
                     value: true,
-                    message: "Company name is required",
+                    message: "Description is required",
                   },
                   minLength: {
                     value: 3,
-                    message: "Please enter your company name",
+                    message: "Please enter your description name",
                   },
                   maxLength: {
                     value: 500,
@@ -113,20 +113,17 @@ export default function BasicTextFields() {
               <label class="control-label">Priority</label>
               <select name="cars" id="cars" class="form-control">
                 <option value="volvo">Select</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+                <option value="volvo">High</option>
+                <option value="saab">low</option>
               </select>
             </div>
             <div class="form-group col-md-6">
               <label class="control-label">Asignee</label>
               <select name="cars" id="cars" class="form-control">
                 <option value="volvo">Select</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+                <option value="volvo">John</option>
+                <option value="saab">Roy</option>
+                <option value="mercedes">Folk</option>
               </select>
             </div>
             <div class="form-group col-md-6">
@@ -134,11 +131,11 @@ export default function BasicTextFields() {
               <input
                 class="form-control"
                 type="text"
-                placeholder="Add Summary "
+                placeholder="Add Tag "
                 {...register("tag", {
                   required: {
                     value: true,
-                    message: "summary is required",
+                    message: "Tag is required",
                   },
                   maxLength: {
                     value: 100,
@@ -179,7 +176,7 @@ export default function BasicTextFields() {
                   },
                   minLength: {
                     value: 3,
-                    message: "Please enter your company name",
+                    message: "Minimun allowed length is 3 characters",
                   },
                   maxLength: {
                     value: 20,
@@ -205,7 +202,6 @@ export default function BasicTextFields() {
             <button
               type="submit"
               class="btn btn-primary"
-              onClick={() => navigate("/")}
             >
               Save
             </button>
